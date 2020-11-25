@@ -1,4 +1,5 @@
 import React from 'react';
+import './SearchInput.scss';
 
 function SearchInput(props) {
   const handleInput = (ev) => {
@@ -13,6 +14,7 @@ function SearchInput(props) {
       <input
         className="search-input"
         type="text"
+        value={props.value}
         placeholder="¿A quién buscas?"
         onChange={handleInput}
       />

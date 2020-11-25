@@ -1,0 +1,21 @@
+.detail {
+  width: 40vw;
+  display: flex;
+  background-color: #35afc7;
+  color: white;
+  margin: 50px auto;
+
+  &-img {
+    width: 40%;
+    overflow: hidden;
+  }
+  &-text {
+    width: 60%;
+    padding: 0 20px;
+    list-style: none;
+    h3 {
+      font-size: 40px;
+      margin: 0;
+    }
+  }
+}
