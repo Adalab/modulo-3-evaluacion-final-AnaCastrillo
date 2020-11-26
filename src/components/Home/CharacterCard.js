@@ -12,7 +12,8 @@ function CharacterCard(props) {
           </div>
           <div className="text-container">
             <h3>{props.character.name}</h3>
-            <span>{props.character.species}</span>
+            <span>{props.character.species} </span>
+            <span>{props.character.gender}</span>
           </div>
         </li>
       </Link>

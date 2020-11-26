@@ -13,6 +13,7 @@ class App extends React.Component {
     this.state = {
       data: [],
       value: '',
+      select: '',
     };
 
     this.handleInput = this.handleInput.bind(this);
@@ -35,9 +36,15 @@ class App extends React.Component {
   }
 
   handleInput(value) {
-    this.setState({
-      value: value.value,
-    });
+    if (value.key === 'name') {
+      this.setState({
+        value: value.value,
+      });
+    } else if (value.key === 'gender') {
+      this.setState({
+        select: value.value,
+      });
+    }
   }
 
   handleCharacterDetail(props) {

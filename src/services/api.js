@@ -8,6 +8,7 @@ const getData = () => {
         return {
           id: character.id,
           name: character.name,
+          gender: character.gender,
           img: character.image,
           species: character.species,
           status: character.status,

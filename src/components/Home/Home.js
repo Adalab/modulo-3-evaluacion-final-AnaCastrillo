@@ -14,6 +14,7 @@ function Home(props) {
         <CharacterList
           results={props.state.data}
           inputValue={props.state.value}
+          selectValue={props.state.select}
         />
       </div>
     </>

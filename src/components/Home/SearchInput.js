@@ -6,12 +6,13 @@ function SearchInput(props) {
     ev.preventDefault();
     props.handleInput({
       value: ev.target.value,
-      key: 'name',
+      key: ev.target.id,
     });
   };
   return (
     <form>
       <input
+        id="name"
         className="search-input"
         type="text"
         value={props.value}
@@ -19,7 +20,7 @@ function SearchInput(props) {
         onChange={handleInput}
       />
       <lable for="gender">Genero:</lable>
-      <select name="gender" id="gender">
+      <select name="gender" id="gender" onChange={handleInput}>
         <option value="male">Male</option>
         <option value="female">Female</option>
         <option value="unknown">Unknown</option>

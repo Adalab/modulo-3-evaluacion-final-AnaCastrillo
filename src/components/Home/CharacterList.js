@@ -4,9 +4,14 @@ import './CharacterList.scss';
 import noChara from '../../images/noChara.jpg';
 
 function CharacterList(props) {
-  let filteredCharacters = props.results.filter((character) =>
-    character.name.toUpperCase().includes(props.inputValue.toUpperCase())
-  );
+  let filteredCharacters = props.results
+    .filter((character) =>
+      character.name.toUpperCase().includes(props.inputValue.toUpperCase())
+    )
+    .filter((character) =>
+      character.gender.toUpperCase().includes(props.selectValue.toUpperCase())
+    );
+
   if (filteredCharacters.length === 0) {
     return (
       <>
