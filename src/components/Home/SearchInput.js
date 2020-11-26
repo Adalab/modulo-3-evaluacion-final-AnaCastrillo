@@ -18,6 +18,12 @@ function SearchInput(props) {
         placeholder="¿A quién buscas?"
         onChange={handleInput}
       />
+      <lable for="gender">Genero:</lable>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="unknown">Unknown</option>
+      </select>
     </form>
   );
 }
